@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/bootstrap.css">   
+    <style>
+         [class*="col"]{
+            padding: 1rem; 
+            background-color: #33b5e5; 
+            border: 2px solid #fff; 
+            color: #fff;
+        }  
+        [class*="container"]{ 
+            margin-bottom: 10px;
+            background-color: #33b5e5; 
+            border: 4px solid #fff; 
+            color: #fff;
+        } 
+    </style>
+</head>
+<body> 
+    <!--layout of columns in bootstrap is always in flexbox-->  
+
+    <!--VERTICAL Alignment (top,middle,bottom,self alignment)-->  
+    <div class="container bg-info text-center" style="height:400px "> 
+        <div class="row align-items-start" style="height:100% ">   <!-- align-items____ inside the height of 100% inside the height of 400px-->
+            <div class="col">One of three columns</div> 
+            <div class="col">One of three columns</div>
+            <div class="col">One of three columns</div>
+        </div>
+    </div> 
+
+    <div class="container bg-info text-center" style="height:400px "> 
+        <div class="row align-items-center" style="height:100% ">   
+            <div class="col">One of three columns</div> 
+            <div class="col">One of three columns</div>
+            <div class="col">One of three columns</div>
+        </div>
+    </div> 
+    <div class="container bg-info text-center" style="height:400px "> 
+        <div class="row align-items-end" style="height:100% ">   
+            <div class="col">One of three columns</div> 
+            <div class="col">One of three columns</div>
+            <div class="col">One of three columns</div>
+        </div>
+    </div> 
+
+    <div class="container bg-info text-center" style="height:400px "> 
+        <div class="row" style="height:100% ">  
+          <div class="col align-self-start">
+            One of three columns
+          </div>
+          <div class="col align-self-center">
+            One of three columns
+          </div>
+          <div class="col align-self-end">
+            One of three columns
+          </div>
+        </div>
+    </div> 
+
+
+    <!--HORIZONTAL Alignment (top,middle,bottom,self alignment)-->   
+    <div class="container text-center justify-content-between" style="height:400px" >
+        <div class="row justify-content-start mb-12">
+            <div class="col-4">
+              One of two columns
+            </div>
+            <div class="col-4">
+              One of two columns
+            </div>
+        </div>
+        <div class="row justify-content-center mb-4 mt-4">
+            <div class="col-4">
+              One of two columns
+            </div>
+            <div class="col-4">
+              One of two columns
+            </div>
+        </div>
+        <div class="row justify-content-end">
+            <div class="col-4">
+              One of two columns
+            </div>
+            <div class="col-4">
+              One of two columns
+        </div>
+    </div>
+     
+    <script src="js/bootstrap.bundle.js"></script>
+</body>
+</html>
