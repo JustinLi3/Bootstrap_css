@@ -4,12 +4,134 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title> 
-    <link rel="stylesheet" href="css/bootstrap.css"> <!--This is how you import bs css-->
+    <link rel="stylesheet" href="css/bootstrap.css"> <!--This is how you import bs css--> 
+    <style>
+        [class*="col"]{
+            padding: 1rem; 
+            background-color: #33b5e5; 
+            border: 2px solid #fff; 
+            color: #fff;
+        } 
+        body{
+          min-height:200vh;  /*makes the height of the page twice the viewport*/
+        }
+    </style>
 </head>
 <body>
-    <h1>Hello Bootstrap World</h1>
-    <!--Containers help contain, class for divs that help with adjustment-->
-    <div class="container-sm border">Container Border</div> <!--Depending on how you want the container to adjust in regards to screen size, use container-___ fluid for 100%-->
+    <!--Containers help contain, class for divs that help with adjustment--> 
+    <div class="container-sm border">
+        <div class="row"> <!--.col & .row tab to get shortcuts-->
+            <div class="col-lg-6">Col 1</div>  <!--dash num is the sizing in rem-->
+            <div class="col-md-3 col-sm-1">Col 2</div>  <!--At medium size screen is 3 rm while small size screen is 1 rm-->
+            <div class="col auto">Col 3</div>
+        </div> 
+        <div class="row"> 
+            <div class="col">Col 1</div> 
+            <div class="col">Col 2</div>  
+            <div class="col">Col 3</div>
+        </div>
+    </div> <!--Depending on how you want the container to adjust in regards to screen size, use container-___ fluid for 100%-->
+    <div class="container my-5"> <!--Margin vertical 5 -->
+        <div class="row">
+            <div class="col-xxl-1 col-xl-2 col-lg-3 col-mid-4 col-sm-6 col-xs-12">col-xxl-1 col-xl-2 col-lg-3 col-mid-4 col-sm-6 col-xs-12</div> 
+            <div class="col-xxl-1 col-xl-2 col-lg-3 col-mid-4 col-sm-6 col-xs-12">col-xxl-1 col-xl-2 col-lg-3 col-mid-4 col-sm-6 col-xs-12</div> 
+            <div class="col-xxl-1 col-xl-2 col-lg-3 col-mid-4 col-sm-6 col-xs-12">col-xxl-1 col-xl-2 col-lg-3 col-mid-4 col-sm-6 col-xs-12</div> 
+            <div class="col-xxl-1 col-xl-2 col-lg-3 col-mid-4 col-sm-6 col-xs-12">col-xxl-1 col-xl-2 col-lg-3 col-mid-4 col-sm-6 col-xs-12</div> 
+            <div class="col-xxl-1 col-xl-2 col-lg-3 col-mid-4 col-sm-6 col-xs-12">col-xxl-1 col-xl-2 col-lg-3 col-mid-4 col-sm-6 col-xs-12</div> 
+            <div class="col-xxl-1 col-xl-2 col-lg-3 col-mid-4 col-sm-6 col-xs-12">col-xxl-1 col-xl-2 col-lg-3 col-mid-4 col-sm-6 col-xs-12</div> 
+            <div class="col-xxl-1 col-xl-2 col-lg-3 col-mid-4 col-sm-6 col-xs-12">col-xxl-1 col-xl-2 col-lg-3 col-mid-4 col-sm-6 col-xs-12</div> 
+            <div class="col-xxl-1 col-xl-2 col-lg-3 col-mid-4 col-sm-6 col-xs-12">col-xxl-1 col-xl-2 col-lg-3 col-mid-4 col-sm-6 col-xs-12</div> 
+            <div class="col-xxl-1 col-xl-2 col-lg-3 col-mid-4 col-sm-6 col-xs-12">col-xxl-1 col-xl-2 col-lg-3 col-mid-4 col-sm-6 col-xs-12</div> 
+            <div class="col-xxl-1 col-xl-2 col-lg-3 col-mid-4 col-sm-6 col-xs-12">col-xxl-1 col-xl-2 col-lg-3 col-mid-4 col-sm-6 col-xs-12</div> 
+            <div class="col-xxl-1 col-xl-2 col-lg-3 col-mid-4 col-sm-6 col-xs-12">col-xxl-1 col-xl-2 col-lg-3 col-mid-4 col-sm-6 col-xs-12</div> 
+            <div class="col-xxl-1 col-xl-2 col-lg-3 col-mid-4 col-sm-6 col-xs-12">col-xxl-1 col-xl-2 col-lg-3 col-mid-4 col-sm-6 col-xs-12</div> 
+        </div>
+    </div>     
+    <div class="container mb-4">
+        <div class="row"> <!--notation that it is container>row>column-->
+          <div class="col">
+            Column
+          </div>
+          <div class="col">
+            Column
+          </div>
+          <div class="col">
+            Column
+          </div>
+        </div>
+      </div>
     <script src = "js/bootstrap.bundle.js"></script> <!--This is how you import bs js-->
-</body>
+
+    <div class="container">
+      <div class="row">
+        <div class="col">1 of 2</div> 
+        <div class="col">2 of 2</div>
+      </div> 
+      <div class="row">    
+        <div class="col">1 of 3</div>
+        <div class="col">2 of 3</div>
+        <div class="col">3 of 3</div>
+      </div>
+    </div>  
+
+    <div class="container mt-4">
+      <div class="row">
+        <div class="col">
+          1 of 3
+        </div>
+        <div class="col-6"> <!--Although we set a width in the middle, the other two columns are automatically adjusted-->
+          2 of 3 (wider)
+        </div>
+        <div class="col">
+          3 of 3
+        </div>
+      </div>
+      <div class="row">
+        <div class="col">
+          1 of 3
+        </div>
+        <div class="col-5">
+          2 of 3 (wider)
+        </div>
+        <div class="col">
+          3 of 3
+        </div>
+      </div>
+    </div>   
+
+    <div class="container">
+      <div class="row justify-content-center"> <!--justify-content-center aligns columns at center at all time-->
+        <div class="col col-lg-2">
+          1 of 3
+        </div>
+        <div class="col-md-auto">
+          Variable width content
+        </div>
+        <div class="col col-lg-2">
+          3 of 3
+        </div>
+      </div>
+      <div class="row">
+        <div class="col">
+          1 of 3
+        </div>
+        <div class="col-md-auto"> <!--Size in middle is auto, maxed-->
+          Variable width content
+        </div>
+        <div class="col col-lg-2">
+          3 of 3
+        </div>
+      </div>
+    </div> 
+
+    <!--Can also seperate using row-columns --> 
+    <div class="container">
+      <div class="row row-cols-2 justify-content-center"> <!--two col per row-->
+        <div class="col-5 m-1 bg-danger" style="height:100px;">First</div> <!--If you add margin, you need to set a max width in order to allow two columns-->
+        <div class="col-5 m-1 bg-warning" style="height:100px;">Second</div>
+        <div class="col-5 m-1 bg-success" style="height:100px;">Third</div>
+        <div class="col-5 m-1 bg-info" style="height:100px;">Fourth</div>
+      </div>
+    </div>
+</body> 
 </html>
